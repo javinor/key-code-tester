@@ -1,0 +1,31 @@
+{
+  "name": "genesis",
+  "version": "1.0.0",
+  "description": "starter project",
+  "scripts": {
+    "lint": "eslint src/**.js",
+    "test": "npm run lint",
+    "build": "npm test && webpack",
+    "start": "webpack-dev-server"
+  },
+  "author": "javinor",
+  "repository": "https://github.com/javinor/genesis",
+  "license": "MIT",
+  "devDependencies": {
+    "css-loader": "^0.26.1",
+    "eslint": "^3.1.1",
+    "eslint-config-standard": "^5.3.5",
+    "eslint-plugin-promise": "^2.0.0",
+    "eslint-plugin-standard": "^2.0.0",
+    "html-webpack-plugin": "^2.28.0",
+    "style-loader": "^0.13.1",
+    "webpack": "^2.2.1",
+    "webpack-dev-server": "^1.16.3"
+  },
+  "dependencies": {
+    "babel-core": "^6.25.0",
+    "babel-loader": "^7.1.1",
+    "react": "^15.6.1",
+    "react-dom": "^15.6.1"
+  }
+}
