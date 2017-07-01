@@ -1,15 +1,15 @@
 {
-  "name": "genesis",
+  "name": "key-code-tester",
   "version": "1.0.0",
-  "description": "starter project",
+  "description": "Display Key event info on screen",
   "scripts": {
     "lint": "eslint src/**.js",
-    "test": "npm run lint",
+    "test": "#",
     "build": "npm test && webpack",
     "start": "webpack-dev-server"
   },
   "author": "javinor",
-  "repository": "https://github.com/javinor/genesis",
+  "repository": "git@github.com:javinor/key-code-tester.git",
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.25.0",
