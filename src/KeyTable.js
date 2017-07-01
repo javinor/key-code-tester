@@ -41,11 +41,14 @@ const KeyTable = (props) => {
     return React.createElement('h3', null, 'Press any key to see details of the key event')
   }
 
-  return React.createElement('table', {
-    className: 'table table-sm table-condensed table-striped table-bordered table-hover'
-  }, [
-    React.createElement(KeyTableHeader),
-    React.createElement(KeyTableBody, props)
+  return React.createElement('div', null, [
+    React.createElement('h4', null, 'Each column is a property of the Key Event you created!'),
+    React.createElement('table', {
+      className: 'table table-sm table-condensed table-striped table-bordered table-hover'
+    }, [
+      React.createElement(KeyTableHeader),
+      React.createElement(KeyTableBody, props)
+    ])
   ])
 }
 
