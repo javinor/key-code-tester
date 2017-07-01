@@ -1,6 +1,6 @@
 'use strict'
 
-const React = require('React')
+const React = require('react')
 
 const eventProperties = [
   'type',
