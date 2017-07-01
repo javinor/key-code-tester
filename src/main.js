@@ -23,7 +23,7 @@ const eventNames = [
 eventNames.forEach(name => window.addEventListener(name, addEvent))
 
 const render = (props) => {
-  requestAnimationFrame(() => ReactDom.render(
+  window.requestAnimationFrame(() => ReactDom.render(
     React.createElement(KeyTable, props),
     document.querySelector('#app')
   ))
