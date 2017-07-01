@@ -12454,9 +12454,9 @@ const KeyTable = props => {
     return React.createElement('h3', null, 'Press any key to see details of the key event');
   }
 
-  return React.createElement('table', {
+  return React.createElement('div', null, [React.createElement('h4', null, 'Each column is a property of the Key Event you created!'), React.createElement('table', {
     className: 'table table-sm table-condensed table-striped table-bordered table-hover'
-  }, [React.createElement(KeyTableHeader), React.createElement(KeyTableBody, props)]);
+  }, [React.createElement(KeyTableHeader), React.createElement(KeyTableBody, props)])]);
 };
 
 module.exports = KeyTable;
@@ -13731,7 +13731,7 @@ exports = module.exports = __webpack_require__(62)();
 
 
 // module
-exports.push([module.i, "h1, h3, .table th {\n  text-align: center;\n}\n", ""]);
+exports.push([module.i, "h1, h3, h4, .table th {\n  text-align: center;\n}\n", ""]);
 
 // exports
 
