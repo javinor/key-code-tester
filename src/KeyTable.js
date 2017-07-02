@@ -21,7 +21,7 @@ const boolean = [
   'ctrlKey',
   'metaKey',
   'shiftKey',
-  'repeat',
+  'repeat'
 ]
 
 const depricated = [
