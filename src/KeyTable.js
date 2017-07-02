@@ -63,12 +63,13 @@ const KeyTable = (props) => {
   }
 
   return React.createElement('div', null, [
-    React.createElement('h4', null, 'Each column is a property of the Key Event you created!'),
+    React.createElement('h4', {key: 'intro'}, 'Each column is a property of the Key Event you created!'),
     React.createElement('table', {
+      key: 'table',
       className: 'table table-sm table-condensed table-striped table-bordered table-hover'
     }, [
-      React.createElement(KeyTableHeader),
-      React.createElement(KeyTableBody, props)
+      React.createElement(KeyTableHeader, {key: 'thead'}),
+      React.createElement(KeyTableBody, Object.assign({key: 'tbody'}, props))
     ])
   ])
 }
