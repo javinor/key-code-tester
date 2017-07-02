@@ -36,9 +36,7 @@ const KeyTableHeader = () =>
   React.createElement('thead', null,
     React.createElement('tr', null,
       eventProperties.map((key, i) =>
-        React.createElement('th', {key: i,
-            style: {backgroundColor: isLowlighted(key) ? 'rgba(3, 10, 3, 0.1)' : 'inherit'}
-          }, `${key}`)
+        React.createElement('th', {key: i, className: isLowlighted(key) ? 'lowlight' : ''}, `${key}`)
       )
     )
   )
@@ -48,10 +46,7 @@ const KeyTableBody = (props) =>
     props.events.map((event, j) =>
       React.createElement('tr', {key: j},
         eventProperties.map((key, i) =>
-          React.createElement('td', {
-            key: i,
-            style: {backgroundColor: isHighlighted(event, key) ? 'rgba(62, 188, 125, 0.1)' : 'inherit'}
-          }, `${event[key]}`)
+          React.createElement('td', {key: i, className: isHighlighted(event, key) ? 'highlight' : ''}, `${event[key]}`)
         )
       )
     )

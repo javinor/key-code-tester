@@ -1,3 +1,6 @@
 h1, h3, h4, .table th {
   text-align: center;
 }
+
+.highlight {background-color: rgba(62, 188, 125, 0.1);}
+.lowlight {background-color: rgba(3, 10, 3, 0.1);}
