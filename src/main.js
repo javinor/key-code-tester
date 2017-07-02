@@ -6,7 +6,7 @@ require('./app/raf-polyfill')
 
 const React = require('react')
 const ReactDom = require('react-dom')
-const KeyTable = require('./KeyTable')
+const KeyTable = require('./app/KeyTable')
 
 const MAX_NUM_OF_EVENTS = 20
 const events = []
