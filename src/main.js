@@ -2,6 +2,7 @@
 
 require('./main.css')
 require('bootstrap/dist/css/bootstrap.min.css')
+require('./app/raf-polyfill')
 
 const React = require('react')
 const ReactDom = require('react-dom')
